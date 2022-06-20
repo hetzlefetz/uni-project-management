@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper, final, twoside]{report}
+\documentclass[12pt, a4paper, final, oneside]{report}
 
 \newcommand{\isPrintVersion}{false}						% false -> show colored links, true -> all links in black
 
@@ -18,7 +18,7 @@
 \newcommand{\studentId}{1234567}
 \newcommand{\course}{XYZ1234}
 
-\newcommand{\supervisorName}{Glißmann-Hochstein}
+\newcommand{\supervisorName}{Prof. Dr. Glißmann-Hochstein}
 
 
 \newcommand{\byTitle}{von}
@@ -46,8 +46,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[left=3.5cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
-\usepackage[ngerman,english]{babel}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -196,6 +196,12 @@
 \def\chapter{\addtocontents{lol}{\protect\addvspace{10pt}}\Chapter}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Images  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{
+    {images/}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Diagrams  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,shadows}
@@ -238,7 +244,7 @@
 
 %%%%% Table of Contents
 	\setlength{\parskip}{0pt}						% after paragraph
-	\setcounter{tocdepth}{2}						% depth of table of contents
+	\setcounter{tocdepth}{1}						% depth of table of contents
 	\tableofcontents
 	\thispagestyle{empty}
 		
@@ -249,7 +255,7 @@
 		\renewcommand{\headrulewidth}{0pt}
 		\renewcommand{\footrulewidth}{0pt}
 	}	
-	\addtocounter{page}{6}							% increase page number: +6
+	\addtocounter{page}{3}							% increase page number: +6
 	\input{acronyms}
 	\addcontentsline{toc}{chapter}{\ListOfAbbreviationsTitle}		
 
