@@ -21,7 +21,7 @@ main="Welcher Nutzergruppe gehörst du an?",border="black")
 ####### Q3 #########
 
 projectKindY<-c(3,4,2,0)
-projectKindX<-c("Kundenprojekte","Interne Projekte","Entwicklungsprojekte","Andere")
+projectKindX<-c("Kundenprojekte","Interne Projekte","Entw. Projekte","Andere")
 
 pdf(file ="q3.pdf")
 

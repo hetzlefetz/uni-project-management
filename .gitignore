@@ -12,3 +12,7 @@ Report/out/report.lot
 Report/out/report.out
 Report/out/report.run.xml
 Report/out/report.toc
+Report/out/report.pdf
+*.pdf
+Report/report.pdf
+Report/report.pdf
